@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Certifications</title>
+  <style>
+    .section {
+      padding: 60px 0;
+      text-align: center;
+      color: #fff;
+    }
+    
+    .section-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    
+    .certification-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .certification {
+      background-color: #f8f2f2;
+      padding: 30px;
+      border-radius: 5px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .certification img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    
+    .certification-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #1441c9;
+    }
+    
+    .certification-description {
+      font-size: 16px;
+      color: #777;
+    }
+    
+    .certification-verify {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .verification-status {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+      color: #777;
+      font-style: italic;
+    }
+    
+    .certification:hover .verification-status {
+      display: block;
+    }
+    body {
+      background-color: #151414;
+    }
+    .button-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+    
+    .back-button,
+    .next-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: rgb(16, 16, 16);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    
+    .back-button:hover,
+    .next-button:hover {
+      background-color: #45a049;
+    }
+    
+    .back-button:disabled,
+    .next-button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title"><i class='bx bxs-certification'></i>Certifications-course completion</h2>
+      <div class="certification-grid">
+        <div class="certification">
+          <img src="c1.jpg" alt="Certification 1">
+          <h3 class="certification-title">APSSDC</h3>
+          <!-- <p class="certification-description">I had completed python language certification through codetantra.</p> -->
+          <a href="#" class="certification-verify"><i class='bx bxs-check-circle'></i>Verifed</a>
+          <div class="verification-status"></div>
+        </div>
+        <div class="certification">
+          <img src="c2.jpg" alt="Certification 2">
+          <h3 class="certification-title">Quiz</h3>
+          <!-- <p class="certification-description">I had completed introduction to HTML through the coursera.</p> -->
+          <a href="#" class="certification-verify"><i class='bx bxs-check-circle'></i>Verifed</a>
+          <div class="verification-status"></div>
+        </div>
+        <div class="certification">
+          <img src="c3.jpg" alt="Certification 3">
+          <h3 class="certification-title">Hackathon</h3>
+          <!-- <p class="certification-description">I had completed python through the coursera.</p> -->
+          <a href="#" class="certification-verify"><i class='bx bxs-check-circle'></i>Verifed</a>
+          <div class="verification-status"></div>
+        </div>
+    </div>
+  </section>
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title"><i class='bx bxs-certification'></i>Certifications</h2>
+      <div class="certification-grid">
+        <div class="certification">
+          <img src="c5.png" alt="Certification 1">
+          <h3 class="certification-title">Codetantra</h3>
+          <!-- <p class="certification-description">I had completed internship through smart internz by salesforce developer.</p> -->
+          <a href="#" class="certification-verify"><i class='bx bxs-check-circle'></i>Verifed</a>
+          <div class="verification-status"></div>
+        </div>
+        <div class="certification">
+          <img src="c6.png" alt="Certification 2">
+          <h3 class="certification-title">Future Skills Prime</h3>
+          <!-- <p class="certification-description">I had completed frontend developer certification in skillBulid.</p> -->
+          <a href="#" class="certification-verify"><i class='bx bxs-check-circle'></i>Verifed</a>
+          <div class="verification-status"></div>
+        </div>
+        <div class="certification">
+          <img src="c7.png" alt="Certification 3">
+          <h3 class="certification-title">Data Analytics</h3>
+          <!-- <p class="certification-description">I had participated in the tataimigation challenge through the unstop.</p> -->
+          <a href="#" class="certification-verify"><i class='bx bxs-check-circle'></i>Verifed</a>
+          <div class="verification-status"></div>
+        </div>
+    </div>
+  </section>
+  <div class="button-container">
+    <button class="back-button"><a href="Aboutme.html"><i class='bx bx-arrow-back' ></i>Back</a></button>
+    <button class="next-button"><a href="contact.html">Next<i class='bx bx-right-arrow-alt' ></i></a></button>
+  </div>
+</body>
+</html>

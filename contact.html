@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Section</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .contact-section {
+            background-color:black;
+            padding: 80px 0;
+        }
+
+        .contact-icons i {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #1928af;
+        }
+
+        .contact-form button[type="submit"] {
+            background-color: #0fe155;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #131413;
+        }
+        body {
+            color: #fff;
+        }
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+          }
+          
+          .back-button,
+          .next-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: rgb(226, 223, 223);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+          }
+          
+          .back-button:hover,
+          .next-button:hover {
+            background-color: #45a049;
+          }
+          
+          .back-button:disabled,
+          .next-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+          }
+          
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Us</h2>
+                    <p>Please fill out the form below to get in touch with us.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center contact-icons">
+                    <i class="fa fa-map-marker"></i>
+                    <p><i class='bx bx-current-location'></i>Piler, chittor, India</p>
+                </div>
+                <div class="col-lg-4 text-center contact-icons">
+                    <i class="fa fa-phone"></i>
+                    <p><i class='bx bx-phone'></i>+91 9963992301</p>
+                </div>
+                <div class="col-lg-4 text-center contact-icons">
+                    <i class="fa fa-envelope"></i>
+                    <p><i class='bx bxl-gmail' ></i>jagannadham527.cse@gmail.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form class="contact-form" method="POST" action="https://mail.google.com">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit"><i class='bx bxs-send'></i>Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>&copy; 2023 Your Company. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="button-container">
+        <button class="back-button"><a href="certification.html"><i class='bx bx-arrow-back' ></i>Back</a></button>
+      </div>
+</body>
+</html>
